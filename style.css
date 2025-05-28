@@ -146,6 +146,8 @@ section {
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
+    background-color: rgb(245, 245, 247);
+    border-radius: 2rem;
 }
 
 .section-container {
