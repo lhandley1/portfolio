@@ -82,6 +82,7 @@
   }
   .text-container {
     text-align: justify;
+    width: 90%;
   }
 }
 

@@ -241,12 +241,17 @@ section {
 /* ABOUT SECTION */
 #about {
     position: relative;
+    margin-bottom: 2.5rem; /* Extra space below about section */
+}
+
+#about .title {
+    margin-bottom: 5rem;
 }
 
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .about-details-container {
@@ -278,6 +283,16 @@ section {
     text-align: center;
 }
 
+.text-container {
+    display: flex;
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 .section-container {
     gap: 4rem;
     height: 80%;
@@ -289,9 +304,24 @@ section {
     margin: auto 0;
 }
 
+.text-container {
+    text-align: justify;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem; /* Extra space below about text */
+    padding: 0 1rem;
+    z-index: 1;
+    background: white;
+    position: relative;
+}
+
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
+    margin-top: 2.5rem; /* Space above experience section */
+}
+
+#experience .title {
+    margin-bottom: 2rem;
 }
 
 .experience-sub-title {
@@ -299,6 +329,7 @@ section {
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
+    margin-top: 1.5rem; /* Space above experience titles */
 }
 
 .experience-details-container {
@@ -386,6 +417,10 @@ article .icon {
 /* PROJECTS SECTION */
 #projects {
     position: relative;
+}
+
+#projects .title {
+    margin-bottom: 2rem;
 }
 
 .color-container {
