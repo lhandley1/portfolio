@@ -325,3 +325,41 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: rgb(163,163,163);
+    background: rgb(250, 250, 250);
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+#slogan {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: darkgreen;
+}
+
+.project-description {
+    color: black;
+    text-align: left;
+}
+
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+
