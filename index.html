@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <script src="script.js" defer></script>
-    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "fZ1e3f_bUBXe5jUHe",
+            });
+        })();
+    </script>
 </head>
 <body>
     <nav id="desktop-nav">
@@ -247,27 +256,6 @@
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Down Arrow" class="icon arrow" onclick="location.href='./#contact'"/>
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <form class="contact-info-upper-container" action="mailto:l.handley@outlook.com" method="POST" enctype="text/plain">
-            <div class="contact-info-container">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="Name" required>
-            </div>
-            <div class="contact-info-container">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="Email" required>
-            </div>
-            <div class="contact-info-container">
-                <label for="message">Message</label>
-                <textarea id="message" name="Message" rows="4" required></textarea>
-            </div>
-            <div class="contact-info-container">
-                <button class="btn btn-color-1" type="submit">Send</button>
-            </div>
-        </form>
     </section>
     <footer>
         <nav>
