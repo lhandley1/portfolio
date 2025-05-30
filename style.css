@@ -15,7 +15,6 @@ html {
 }
 
 p {
-    font-size: 1.1rem;
     color: rgb(85, 85, 85);
 }
 
@@ -146,7 +145,7 @@ a:hover {
 /* SECTION */
 section {
     padding-top: 4vh;
-    height: 75vh;
+    height: 70vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -348,7 +347,6 @@ article .icon {
 }
 
 #slogan {
-    font-size: 1.25rem;
     font-weight: 600;
     color: darkgreen;
 }
