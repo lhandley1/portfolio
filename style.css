@@ -335,8 +335,8 @@ article .icon {
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
 }
 
 .project-title {
@@ -345,7 +345,6 @@ article .icon {
 }
 
 #slogan {
-    text-align: center;
     font-size: 1.25rem;
     font-weight: 600;
     color: darkgreen;
@@ -353,7 +352,6 @@ article .icon {
 
 .project-description {
     color: black;
-    text-align: left;
 }
 
 .project-btn {
@@ -366,7 +364,7 @@ article .icon {
    display: flex;
    justify-content: center;
    flex-direction: column;
-   height: 70vh;
+   height: 50vh;
 }
 
 .contact-info-upper-container {
@@ -398,4 +396,14 @@ article .icon {
 
 .email-icon {
     height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
 }
