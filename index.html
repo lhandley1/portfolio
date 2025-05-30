@@ -250,11 +250,23 @@
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJ4U8ubcGsrZDrNGWwnV-EhfwITBNG-lrEn4zSfEGsu_uWOg/viewform?embedded=true" width="640" height="645" frameborder="0" marginheight="0" marginwidth="0">
-                Loading…
-            </iframe>
-        </div>
+        <form class="contact-info-upper-container" action="mailto:l.handley@outlook.com" method="POST" enctype="text/plain">
+            <div class="contact-info-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" required>
+            </div>
+            <div class="contact-info-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="contact-info-container">
+                <label for="message">Message</label>
+                <textarea id="message" name="Message" rows="4" required></textarea>
+            </div>
+            <div class="contact-info-container">
+                <button class="btn btn-color-1" type="submit">Send</button>
+            </div>
+        </form>
     </section>
     <footer>
         <nav>

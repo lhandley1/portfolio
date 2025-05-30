@@ -50,44 +50,67 @@
   #contact, footer {
     height: auto;
     min-height: 40vh;
-    padding: 1rem 0.2rem;
+    padding: 1rem 0.5rem; /* Reduced padding for smaller screens */
+    box-sizing: border-box;
   }
   #contact {
     margin: 0.5rem 0;
-    padding: 1rem 0.2rem;
+    padding: 1rem 0.5rem; /* Reduced padding for smaller screens */
     border-radius: 0.7rem;
     box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   .contact-info-upper-container {
-    padding: 0.5rem 0.2rem;
-    max-width: 90%;         /* Make container full width */
+    padding: 0.7rem 0.3rem; /* Less padding to fit small screens */
+    max-width: 90%;
     border-radius: 0.7rem;
     box-shadow: none;
     border: 1px solid rgb(220,220,220);
     background: #fff;
     min-width: 0;
+    gap: 1rem;
+    box-sizing: border-box;
+    width: 90%;
   }
-  .contact-info-upper-container iframe {
+  .contact-info-container {
     width: 100%;
-    min-width: 0;
-    height: 420px;
-    border-radius: 0.7rem;
+    padding: 0.3rem 0;
+    box-sizing: border-box;
+  }
+  .contact-info-container label {
+    margin-bottom: 0.6rem;
+    margin-left: 1rem;
     display: block;
+    width: 90%;          /* Match input width */
+    box-sizing: border-box;
   }
   .contact-info-container input,
   .contact-info-container textarea {
-    width: 80%;
+    width: 90%;
     font-size: 1rem;
-    padding: 0.7rem 0.7rem;
+    padding: 0.9rem 0.9rem;
     border-radius: 0.7rem;
     box-sizing: border-box;
+    margin-bottom: 0.2rem;
   }
   .contact-info-container button.btn {
-    width: 95%;
-    padding: 0.8rem 0;
+    width: 90%;
+    padding: 0.9rem 0;
     font-size: 1rem;
     border-radius: 1.2rem;
-    margin-top: 0.7rem;
+    margin-top: 0.9rem;
+  }
+  #contact .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  /* Ensure no horizontal scroll */
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   #profile {
     height: 75vh;
