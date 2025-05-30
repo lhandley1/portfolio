@@ -26,6 +26,7 @@ a,
 }
 
 /* DESKTOP NAVIGATION */
+
 nav, .nav-links {
     display: flex;
 }
@@ -56,7 +57,9 @@ a:hover {
 }
 
 .logo {
-   font-size: 2rem;
+    color: darkgreen;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .logo:hover {
