@@ -48,7 +48,39 @@
     font-size: 0.95rem;
   }
   #contact, footer {
-    height: 40vh;
+    height: auto;
+    min-height: 40vh;
+    padding: 1rem 0.2rem;
+  }
+  #contact {
+    margin: 0.5rem 0;
+    padding: 1rem 0.2rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .contact-info-upper-container {
+    padding: 0.5rem 0.2rem;
+    max-width: 90%;
+    border-radius: 0.7rem;
+    box-shadow: none;
+    border: 1px solid rgb(220,220,220);
+    background: #fff;
+    min-width: 0;
+  }
+  .contact-info-container input,
+  .contact-info-container textarea {
+    width: 95%;
+    font-size: 1rem;
+    padding: 0.7rem 0.7rem;
+    border-radius: 0.7rem;
+    box-sizing: border-box;
+  }
+  .contact-info-container button.btn {
+    width: 95%;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    border-radius: 1.2rem;
+    margin-top: 0.7rem;
   }
   #profile {
     height: 75vh;
