@@ -60,16 +60,23 @@
   }
   .contact-info-upper-container {
     padding: 0.5rem 0.2rem;
-    max-width: 90%;
+    max-width: 90%;         /* Make container full width */
     border-radius: 0.7rem;
     box-shadow: none;
     border: 1px solid rgb(220,220,220);
     background: #fff;
     min-width: 0;
   }
+  .contact-info-upper-container iframe {
+    width: 100%;
+    min-width: 0;
+    height: 420px;
+    border-radius: 0.7rem;
+    display: block;
+  }
   .contact-info-container input,
   .contact-info-container textarea {
-    width: 95%;
+    width: 80%;
     font-size: 1rem;
     padding: 0.7rem 0.7rem;
     border-radius: 0.7rem;
