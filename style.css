@@ -15,7 +15,7 @@ html {
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: rgb(85, 85, 85);
 }
 
@@ -434,17 +434,42 @@ article .icon {
 }
 
 .project-title {
+    font-size: 2rem;
     margin: 1rem;
     color: black;
 }
 
 #slogan {
+    font-size: 1.2rem;
     font-weight: 600;
     color: darkgreen;
 }
 
 .project-description {
+    text-align: left;
     color: black;
+}
+
+.project-sub-section {
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.project-list {
+    margin-left: 1rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.feature-list {
+    list-style: none;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#percentage-metric, #research-metric, #impact-result {
+    font-weight: bold;
+    color: red;
 }
 
 .project-btn {

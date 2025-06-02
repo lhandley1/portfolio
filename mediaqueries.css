@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 600px) {
   p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
   #profile {
     height: 75vh;
@@ -82,7 +82,17 @@
   }
   .text-container {
     text-align: justify;
-    width: 90%;
+    width: 90%
+  }
+  .project-title {
+    font-size: 1.8rem;
+  }
+  .project-sub-section {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  #slogan {
+    font-size: 1.2rem;
   }
 }
 
