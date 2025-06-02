@@ -378,7 +378,7 @@ article {
     color: rgb(255, 212, 59);
 }
 
-#java-icon {
+#java-icon, #pytorch-icon {
     color: rgb(255, 153, 0);
 }
 
@@ -408,6 +408,26 @@ article {
 
 #github-icon {
     color: black;
+}
+
+#pandas-icon {
+    color: rgb(21, 4, 88)
+}
+
+#pillow-icon {
+    color: rgb(74, 144, 226);
+}
+
+#cnn-icon {
+    color: rgb(236, 64, 122);
+}
+
+#knn-icon {
+    color: rgb(40, 167, 69);
+}
+
+#nb-icon {
+    color: rgb(111, 66, 193);
 }
 
 article .icon {
