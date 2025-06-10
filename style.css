@@ -430,6 +430,18 @@ article {
     color: rgb(111, 66, 193);
 }
 
+#matplotlib-icon {
+    color: rgb(139, 0, 139);
+}
+
+#numpy-icon {
+    color: rgb(77, 119, 207);
+}
+
+#colab-icon {
+    color: rgb(232, 113, 10);
+}
+
 article .icon {
     cursor: default;
 }
