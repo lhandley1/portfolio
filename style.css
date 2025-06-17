@@ -347,6 +347,7 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
+    padding: 2rem;
     justify-content: space-around;
 }
 
