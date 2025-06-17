@@ -245,16 +245,20 @@ section {
 }
 
 #about .title {
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
+    position: relative;
 }
 
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 5.5rem;
+    padding-top: 0;
+    margin-top: 0; /* Changed */
 }
 
 .about-details-container {
+    padding-top: 4rem;
+    padding-bottom: 0;
     justify-content: center;
     flex-direction: column;
 }
@@ -275,8 +279,8 @@ section {
 
 .details-containers {
     flex-direction: column;
-    margin-top: 2rem;
-    padding: 1.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
     background: white;
     border-radius: 2rem;
     border: rgb(53,53,53) 0.1rem solid;
