@@ -47,6 +47,10 @@
   p {
     font-size: 1rem;
   }
+  .details-containers {
+    width: 90%;
+    margin: 0;
+  }
   #profile {
     height: 75vh;
     margin-bottom: 0;
