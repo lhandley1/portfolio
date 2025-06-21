@@ -523,87 +523,14 @@ footer p {
 }
 
 /* Contact Section Desktop Styles */
-#contact {
-    margin: 4rem auto 0 auto;
-    padding: 2.5rem 2rem;
-    background: white;
-    border-radius: 2rem;
-    max-width: 900px;
-    width: 90%; /* Take up 90% of the screen width on desktop */
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1.5px solid #bdbdbd;
-}
-
-#contact .section__text__p1 {
-    color: darkgreen;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-#contact .title {
-    margin-bottom: 2rem;
-}
-
-.contact-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.contact-form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.contact-form-group label {
-    font-weight: 500;
-    color: #222;
-    margin-left: 0.3rem;
-}
-
+#contact,
+#contact .section__text__p1,
+#contact .title,
+.contact-form,
+.contact-form-group,
+.contact-form-group label,
 .contact-form-group input,
-.contact-form-group textarea {
-    border: 1.5px solid #bdbdbd;
-    border-radius: 1.2rem;
-    padding: 0.9rem 1.2rem;
-    font-size: 1.05rem;
-    background: #f4f8f6;
-    color: #222;
-    font-family: inherit;
-    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
-    resize: none;
-}
-
-.contact-form-group input:focus,
-.contact-form-group textarea:focus {
-    border: 1.5px solid darkgreen;
-    background: #fff;
-    outline: none;
-    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
-}
-
+.contact-form-group textarea,
 .contact-btn {
-    display: block;
-    margin: 1.2rem auto 0 auto; /* Center the button */
-    width: 90%;                /* Button takes up most of the form width */
-    padding: 0.8rem 0;
-    border-radius: 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    background: darkgreen;
-    color: #fff;
-    border: none;
-    transition: background 0.2s, color 0.2s;
-    text-align: center;
-}
-
-.contact-btn:hover {
-    background: #222;
-    color: #fff;
-    cursor: pointer;
+    display: none !important;
 }
