@@ -108,5 +108,34 @@
   #slogan {
     font-size: 1.2rem;
   }
+  #contact {
+    margin: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    max-width: 90vw;
+    width: 90vw;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    border: 2px solid #bdbdbd; /* Add grey border */
+  }
+  #contact .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .contact-form {
+    gap: 1rem;
+  }
+  .contact-form-group input,
+  .contact-form-group textarea {
+    font-size: 1rem;
+    padding: 0.7rem 0.7rem;
+    border-radius: 0.7rem;
+  }
+  .contact-btn {
+    width: 100%;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    border-radius: 1.2rem;
+    margin-top: 0.7rem;
+    align-self: center;
+  }
 }
-
