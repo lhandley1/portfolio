@@ -57,7 +57,11 @@ a:hover {
 }
 
 .logo {
-    color: darkgreen;
+    background: linear-gradient(90deg, #179c52 0%, #1fa463 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -523,14 +527,86 @@ footer p {
 }
 
 /* Contact Section Desktop Styles */
-#contact,
-#contact .section__text__p1,
-#contact .title,
-.contact-form,
-.contact-form-group,
-.contact-form-group label,
+#contact {
+    margin: 2rem auto 0 auto;
+    padding: 2.5rem 2rem;
+    background: white;
+    border-radius: 2rem;
+    max-width: 80%;      /* Changed from 500px to 90vw */
+    width: 80%;          /* Ensure it takes up 90% of the viewport width */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #bdbdbd;
+}
+
+#contact .title {
+    margin-bottom: 2rem;
+    color: darkgreen;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form-group label {
+    font-weight: 500;
+    color: #222;
+    margin-left: 0.3rem;
+}
+
 .contact-form-group input,
-.contact-form-group textarea,
+.contact-form-group textarea {
+    border: 1.5px solid #bdbdbd;
+    border-radius: 1.2rem;
+    padding: 0.9rem 1.2rem;
+    font-size: 1.05rem;
+    background: #f4f8f6;
+    color: #222;
+    font-family: inherit;
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+    resize: none;
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+    border: 1.5px solid darkgreen;
+    background: #fff;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+}
+
 .contact-btn {
-    display: none !important;
+    display: block;
+    margin: 1.2rem auto 0 auto;
+    width: 60%;
+    padding: 0.9rem 0;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #179c52 0%, #1fa463 100%); /* Subtle green gradient */
+    color: #fff;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(23, 156, 82, 0.10);
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+    background: #179c52; /* Solid green on hover/focus */
+    color: #fff;
+    cursor: pointer;
+    outline: 2px solid #145214;
+    outline-offset: 2px;
 }
