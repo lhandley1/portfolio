@@ -57,7 +57,7 @@ a:hover {
 }
 
 .logo {
-    background: linear-gradient(90deg, #179c52 0%, #1fa463 100%);
+    background: #00bf63;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
