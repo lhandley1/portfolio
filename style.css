@@ -256,7 +256,10 @@ section {
 }
 
 .about-containers {
+    display: flex;
     gap: 2rem;
+    justify-content: center;
+    align-items: stretch; /* Ensures both cards align at the top and have equal height if possible */
     margin-bottom: 2rem;
     padding-top: 0;
     margin-top: 0; /* Changed */
@@ -700,48 +703,45 @@ footer p {
 .details-containers.education {
     background: linear-gradient(135deg, #e3f2fd 60%, #90caf9 100%);
     border-radius: 2rem;
+    border: rgb(163,163,163) 0.1rem solid; /* Add border for consistency */
 }
 
 .details-containers.awards {
-    background: linear-gradient(135deg, #fce4ec 60%, #f8bbd0 100%); /* Pink gradient */
+    background: linear-gradient(135deg, #fce4ec 60%, #f8bbd0 100%);
+    /* All other properties are inherited above */
+}
+
+/* Ensure the container for the cards uses flex and aligns items to the start */
+.about-containers {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch; /* Ensures both cards align at the top and have equal height if possible */
+    margin-bottom: 2rem;
+    padding-top: 0;
+    margin-top: 0; /* Changed */
+}
+
+/* Make sure both cards have the same padding and margin */
+.details-containers.education,
+.details-containers.awards {
+    background: linear-gradient(135deg, #e3f2fd 60%, #90caf9 100%);
     border-radius: 2rem;
+    border: rgb(163,163,163) 0.1rem solid;
     padding: 1rem;
-    margin: 0 0.5rem 1rem 0.5rem;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: none;
     min-width: 0;
     width: 100%;
     max-width: unset;
     transition: box-shadow 0.2s;
+    box-sizing: border-box;
 }
 
-.details-containers.education .icon,
-.details-containers.awards .icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.details-containers.education h3,
-.details-containers.awards h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-}
-
-.details-containers.education p,
-.details-containers.awards p {
-    margin: 0.2rem 0;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #222;
-}
-
-#interested .title {
-    text-align: center;
-    margin-bottom: 1rem;
+.details-containers.awards {
+    background: linear-gradient(135deg, #fce4ec 60%, #f8bbd0 100%);
+    /* All other properties are inherited above */
 }
