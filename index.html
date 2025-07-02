@@ -19,6 +19,7 @@
             <!-- Desktop nav -->
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#interested">Interests</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -35,6 +36,7 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#interested" onclick="toggleMenu()">Interests</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -67,12 +69,12 @@
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
-                    <div class="details-containers">
+                    <div class="details-containers education">
                         <img src="./assets/education.png" alt="Education Icon" class="icon"/>
                         <h3>Education</h3>
                         <p><b>First Class Honours -</b> BSc Computer Science <br/> <b>BTEC Level 3 -</b> ICT and Computing <br/>(D*, D*, D)</p>
                     </div>
-                    <div class="details-containers">
+                    <div class="details-containers awards">
                         <img src="./assets/experience.png" alt="Achievements Icon" class="icon"/>
                         <h3>Awards</h3>
                         <p>The Henley College Education Award for ICT and Computing</p>
@@ -87,6 +89,48 @@
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Down Arrow" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <section id="interested">
+        <p class="section__text__p1">Interested In</p>
+        <h1 class="title">Tech & Creative Interests</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <div class="article-container" id="interested-articles">
+                        <article class="interest-card webapp">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h3>Web Application<br>Development</h3>
+                            </div>
+                        </article>
+                        <article class="interest-card genai">
+                            <i class="fas fa-magic"></i>
+                            <div>
+                                <h3>Generative AI</h3>
+                            </div>
+                        </article>
+                        <article class="interest-card llms">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <h3>LLMs</h3>
+                            </div>
+                        </article>
+                        <article class="interest-card agentic">
+                            <i class="fas fa-network-wired"></i>
+                            <div>
+                                <h3>Agentic AI</h3>
+                            </div>
+                        </article>
+                        <article class="interest-card photo">
+                            <i class="fas fa-camera-retro"></i>
+                            <div>
+                                <h3>Photography</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
@@ -427,6 +471,7 @@
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
+                    <li><a href="#interested">Interests</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>

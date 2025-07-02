@@ -149,12 +149,13 @@ a:hover {
 
 /* SECTION */
 section {
-    padding-top: 4vh;
+    padding-top: 2vh;
     height: 70vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
-    border-radius: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 
 .section-container {
@@ -245,7 +246,8 @@ section {
 /* ABOUT SECTION */
 #about {
     position: relative;
-    margin-bottom: 2.5rem; /* Extra space below about section */
+    margin-bottom: 2rem;
+    padding-bottom: 0;
 }
 
 #about .title {
@@ -324,7 +326,8 @@ section {
 /* EXPERIENCE SECTION */
 #experience {
     position: relative;
-    margin-top: 6rem; /* Space above experience section */
+    margin-top: 0rem;
+    padding-top: 0.5rem;
 }
 
 #experience .title {
@@ -346,12 +349,11 @@ section {
 
 .article-container {
     display: flex;
-    text-align: initial;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
     gap: 2rem;
-    padding: 2rem;
-    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 0;
 }
 
 article {
@@ -526,14 +528,13 @@ footer p {
     text-align: center;
 }
 
-/* Contact Section Desktop Styles */
 #contact {
     margin: 2rem auto 0 auto;
     padding: 2.5rem 2rem;
     background: white;
     border-radius: 2rem;
-    max-width: 80%;      /* Changed from 500px to 90vw */
-    width: 80%;          /* Ensure it takes up 90% of the viewport width */
+    max-width: 80%;      
+    width: 80%;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     display: flex;
     flex-direction: column;
@@ -604,9 +605,143 @@ footer p {
 
 .contact-btn:hover,
 .contact-btn:focus {
-    background: #179c52; /* Solid green on hover/focus */
+    background: #179c52;
     color: #fff;
     cursor: pointer;
     outline: 2px solid #145214;
     outline-offset: 2px;
+}
+
+#interested {
+    margin-bottom: 0rem;
+    padding-bottom: 0;
+}
+
+#interested .section__text__p1,
+#interested .title {
+    text-align: center;
+}
+
+#interested-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.interest-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+    min-width: 120px;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 8px rgba(30,144,255,0.07);
+    padding: 1.2rem 0.5rem;
+    background: #f8f8f8;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.interest-card i {
+    font-size: 2.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.interest-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.interest-card.webapp {
+    background: linear-gradient(135deg,#e8f5e9 60%,#c8e6c9 100%);
+}
+.interest-card.webapp i {
+    color: #179c52;
+}
+.interest-card.genai {
+    background: linear-gradient(135deg,#f3e5f5 60%,#d1c4e9 100%);
+}
+.interest-card.genai i {
+    color: #a259c6;
+}
+.interest-card.llms {
+    background: linear-gradient(135deg,#e3f2fd 60%,#bbdefb 100%);
+}
+.interest-card.llms i {
+    color: #1e90ff;
+}
+.interest-card.agentic {
+    background: linear-gradient(135deg,#fff9e5 60%,#ffe082 100%);
+}
+.interest-card.agentic i {
+    color: #ffc107;
+}
+.interest-card.photo {
+    background: linear-gradient(135deg,#fff3e0 60%,#ffcc80 100%);
+}
+.interest-card.photo i {
+    color: #e76f00;
+}
+
+#interested .experience-details-container,
+#interested .about-containers,
+#interested .details-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.details-containers.education {
+    background: linear-gradient(135deg, #e3f2fd 60%, #90caf9 100%);
+    border-radius: 2rem;
+}
+
+.details-containers.awards {
+    background: linear-gradient(135deg, #fce4ec 60%, #f8bbd0 100%); /* Pink gradient */
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 0 0.5rem 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: none;
+    min-width: 0;
+    width: 100%;
+    max-width: unset;
+    transition: box-shadow 0.2s;
+}
+
+.details-containers.education .icon,
+.details-containers.awards .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.details-containers.education h3,
+.details-containers.awards h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.details-containers.education p,
+.details-containers.awards p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #222;
+}
+
+#interested .title {
+    text-align: center;
+    margin-bottom: 1rem;
 }
