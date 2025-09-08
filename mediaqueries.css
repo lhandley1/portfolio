@@ -205,11 +205,122 @@
   }
   .details-containers.education p,
   .details-containers.awards p {
-      font-size: 0.98rem;
+      font-size: 0.80rem;
       margin: 0.2rem 0;
       line-height: 1.5;
   }
   .section-container {
     gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project-summary {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* ensure projects container padding is symmetric on small screens */
+  .project-list {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .details-containers.color-container.project-list {
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    background: transparent;
+  }
+
+  .details-containers.color-container.project-list {
+    padding: 1rem 0.8rem;
+    background: white;
+    border-radius: 1rem;
+    border: 1.5px solid #bdbdbd;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .project-thumb {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* make square based on available width */
+    height: auto; /* let aspect-ratio determine height */
+    object-fit: cover; /* fill the square while preserving important content */
+    border-radius: 0.8rem;
+    display: block;
+  }
+
+  .project-toggle-icon {
+    width: auto;
+    align-self: center;
+    margin: 0.6rem auto 0.2rem auto;
+    padding: 0.55rem 1rem;
+  }
+
+  .project-title {
+    font-size: 1.05rem;
+  }
+
+  .project-content {
+    padding-top: 0.5rem;
+  }
+
+  /* Reduce vertical gaps for project content on mobile */
+  .project-sub-section {
+    font-size: 1.12rem;
+    margin: 0.35rem 0 0.12rem 0; /* slightly smaller top and bottom gap */
+  }
+
+  .project-description {
+    margin: 0.12rem 0 0.45rem 0; /* tighter paragraph spacing */
+  }
+
+  /* Improve mobile readability inside project details: add small breaks between sentences,
+     ensure long words wrap, and slightly increase line-height for comfortable reading. */
+  .project-content {
+    font-size: 0.50rem; /* smaller, as requested */
+    line-height: 1.45; /* slightly tighter line-height to match smaller size */
+    /* Prefer breaking at normal word boundaries; avoid mid-word splits and hyphenation */
+    overflow-wrap: break-word;
+    word-break: normal;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .project-content p {
+    margin-bottom: 0.4rem; /* small break after paragraphs */
+  }
+
+  /* Give both feature (contributions) and project lists a small break between items on mobile */
+  .project-content .project-list li,
+  .project-content .feature-list li {
+    margin: 0.12rem 0; /* small vertical spacing between list items */
+    line-height: 1.45; /* makes sentences inside an li easier to read */
+  }
+
+  /* Remove excessive left indentation for lists on mobile; keep a small left padding for readability */
+  .project-list, .feature-list {
+    margin: 0.18rem 0 0.45rem 0;
+    padding-left: 0; /* remove indent for contributions */
+  }
+
+  /* Make bullets visible and readable inside project details on small screens */
+  .project-content {
+    overflow: visible; /* ensure markers are not clipped */
+  }
+  /* Show compact bullets for Core Technologies / Achievements (these use .project-list) */
+  .project-content .project-list {
+    list-style-type: disc; /* standard bullets */
+    list-style-position: outside;
+    padding-left: 1.1rem; /* slightly tighter indent for mobile */
+    margin: 0.18rem 0 0.45rem 0;
+    color: #111;
+  }
+
+  /* Reduce vertical spacing between bullet items for improved readability */
+  .project-content .project-list li {
+    margin: 0.06rem 0; /* reduced spacing between bullets for compact mobile view */
   }
 }

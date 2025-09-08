@@ -83,7 +83,8 @@
                 </div>
                 <div class="text-container">
                     <p>
-                        I'm a <b>First-Class Honours Computer Science graduate</b> passionate about applying AI to create meaningful impact. I developed <b>ZeroWasteCook</b>, a full-stack AI application tackling food waste through image recognition and recipe recommendations, and led an Agile team building <b>ChatAdvisor</b>, an AI chatbot improving university support resources access for students with learning difficulties. Proficient in <b>Python, Java, Django, PyTorch, and cloud-based AI services</b>. I also recently completed certifications in <b>responsible AI</b> and <b>prompt engineering</b> whilst getting involved with the <b>Thames Valley AI Hub</b> and <b>Reading Tech Cluster</b>. Seeking my first opportunity as a <b>Software Engineer or AI Engineer</b>.
+                        I'm a <b>First-Class Honours Computer Science graduate</b> passionate about applying AI to create meaningful impact. I developed <b>ZeroWasteCook</b>, a full-stack AI application tackling food waste through image recognition and recipe recommendations, and led an Agile team building <b>ChatAdvisor</b>, an AI chatbot improving university support resources access for students with learning difficulties. Proficient in <b>Python, Java, Django, PyTorch, and cloud-based AI services</b>.
+                        I also recently completed certifications in <b>responsible AI</b> and <b>prompt engineering</b> whilst getting involved with the <b>Thames Valley AI Hub</b> and <b>Reading Tech Cluster</b>. Seeking my first opportunity as a <b>Software Engineer or AI Engineer</b>.
                     </p>
                 </div>
             </div>
@@ -180,11 +181,11 @@
                                 <p>Basic</p>
                             </div>
                         </article>
-                        <!-- React Native -->
+                        <!-- Flutter (replacing React Native) -->
                         <article>
-                            <i class="devicon-react-original colored" style="font-size:2.2rem; color:#00d8ff;"></i>
+                            <i class="devicon-flutter-plain colored" style="font-size:2.2rem; color:#02569B;"></i>
                             <div>
-                                <h3>React Native</h3>
+                                <h3>Flutter</h3>
                                 <p>Learning</p>
                             </div>
                         </article>
@@ -341,105 +342,101 @@
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-containers color-container">
-                <div class="article-container">
-                    <img src="./assets/project-1.png" 
-                    alt="ZeroWasteCook application screenshots" 
-                    class="project-img"/>
-                </div>
-                <h2 class="experience-sub-title project-title">ZeroWasteCook - AI Food Waste &amp; Budgeting App</h2>
-                <span id="slogan">Save More 💰 | Waste Less ♻️ | Cook Smart 🍳</span><br/><br/>
+                <div class="details-containers color-container project-list">
 
-                <h3 class="project-sub-section">Problem:</h3>
-                <p class="project-description">
-                    University students often struggle with food waste and tight budgets, 
-                    contributing to financial strain and environmental impact. 
-                    This project aimed to develop an AI-driven solution
-                    to help students minimise waste and save money through smarter recipe planning
-                    and sustainable cooking habits.
-                </p><br/>
+                    <!-- Project 1 -->
+                    <details class="project-item">
+                        <summary class="project-summary">
+                            <img src="./assets/project-1.png" alt="ZeroWasteCook thumbnail" class="project-thumb"/>
+                            <div class="project-meta">
+                                <h2 class="experience-sub-title project-title">ZeroWasteCook</h2>
+                                <span class="project-slogan">Save More 💰 | Waste Less ♻️ | Cook Smart 🍳</span>
+                            </div>
+                            <div class="project-toggle project-toggle-icon" aria-hidden="true">
+                                <span class="project-toggle-label">Details</span>
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+                        </summary>
+                        <div class="project-content">
+                            <h3 class="project-sub-section">Problem</h3>
+                            <p class="project-description">University students often struggle with food waste and tight budgets, contributing to financial strain and environmental impact. Many students lack quick, reliable ways to identify leftover ingredients and plan meals that use what they already have. This increases avoidable waste and household food costs.</p>
 
-                <h3 class="project-sub-section">Solution: </h3>
-                <p class="project-description">
-                    Leveraging Agile (Scrum) principles, I developed ZeroWasteCook,
-                    an <strong>AI-powered web application</strong> for intelligent recipe recommendations and effective food management. 
-                    The app classifies ingredients from user-uploaded images using a fine-tuned <strong>PyTorch InceptionV3 (CNN) model</strong>
-                    and sources filtered recipes via the <strong>Edamam's Recipe Search API</strong>.
-                </p><br/>
+                            <h3 class="project-sub-section">Solution</h3>
+                            <p class="project-description">Leveraging Agile (Scrum) principles, I developed ZeroWasteCook, an <strong>AI-powered web application</strong> for intelligent recipe recommendations and effective food management. The app allows users to upload photos of their pantry or fridge, classifies visible ingredients using a fine-tuned <strong>PyTorch InceptionV3 (CNN) model</strong>, and then queries the <strong>Edamam Recipe Search API</strong> to surface recipes that use those ingredients while respecting allergies and preferences. The web UI provides expiry tracking, suggested shopping lists, and estimated monetary & environmental impact metrics to encourage sustainable choices.</p>
 
-                <h3 class="project-sub-section">Key Features: </h3>
-                <ul class="feature-list">
-                    <li>🥦 <i>Ingredient Recognition</i></li>
-                    <li>📅 <i>Recipe Expiry Date Tracking</i></li>
-                    <li>🚫 <i>Allergy & Preference Filters</i></li>
-                    <li>🔍 <i>Smart Recipe Suggestions</i></li>
-                    <li>🍽️ <i>Nutrition Insights</i></li>
-                    <li>🌱 <i>Environmental Impact Rating: <br/>(A+ to F)</i></li>
-                    <li>💷 <i>Estimated Food Waste Savings: <br/>(£)</i></li>
-                </ul><br/>
+                            <h3 class="project-sub-section">Key Features</h3>
+                            <ul class="feature-list">
+                                <li>🥦 <i>Ingredient Recognition (image upload & camera)</i></li>
+                                <li>📅 <i>Recipe Expiry Date Tracking with reminders</i></li>
+                                <li>🚫 <i>Allergy & Preference Filters</i></li>
+                                <li>🔍 <i>Smart Recipe Suggestions matched to available ingredients</i></li>
+                                <li>🍽️ <i>Nutrition Insights per suggested recipe</i></li>
+                                <li>🌱 <i>Environmental Impact Rating (A+ to F) for recipe choices</i></li>
+                                <li>💷 <i>Estimated Food Waste Savings (currency estimates per user)</i></li>
+                            </ul>
 
-                <h3 class="project-sub-section">Core Technologies:</h3>
-                <ul class="project-list">
-                    <li><strong>AI/Machine Learning:</strong> Python, PyTorch, InceptionV3 (CNN for Image Classification)</li>
-                    <li><strong>Web App Framework:</strong> Django</li>
-                    <li><strong>API Integration:</strong> Edamam Recipe Search API</li>
-                    <li><strong>Development Methodology:</strong> Agile, Scrum, BDD (Behaviour-Driven Development)</li>
-                    <li><strong>Dataset:</strong> Utilised the 'Food Classification' Kaggle dataset (61 food ingredient classes) for InceptionV3 model fine-tuning.</li>
-                </ul><br/>
+                            <h3 class="project-sub-section">Core Technologies</h3>
+                            <ul class="project-list">
+                                <li><strong>AI/Machine Learning:</strong> Python, PyTorch, InceptionV3 (CNN fine-tuning)</li>
+                                <li><strong>Web App Framework:</strong> Django</li>
+                                <li><strong>API Integration:</strong> Edamam Recipe Search API</li>
+                                <li><strong>Development Methodology:</strong> Agile, Scrum, BDD (Behaviour-Driven Development)</li>
+                                <li><strong>Dataset:</strong> Food Classification Kaggle dataset (61 ingredient classes) used for model fine-tuning</li>
+                            </ul>
 
-                <h3 class="project-sub-section">Achievements &amp; Impact:</h3>
-                <ul class="project-list">
-                    <!--<li>Delivered a functional <strong>AI app</strong> built to reduce student <strong>food waste</strong> and <strong>inspire recipes</strong>, with its <strong>AI image classification model</strong> achieving <span id="percentage-metric">46.27% accuracy</span>.</li>-->
-                    <li>User research confirmed <strong>significant student interest</strong> <span id="research-metric">(&gt;70%)</span> in key features, highlighting the app's potential for promoting <strong>sustainable</strong> and <strong>budget-friendly</strong> food habits.</li>
-                </ul>
-                <!--<button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
-                    Live Demo
-                </button>-->
-                </div>
-                <div class="details-containers color-container">
-                <div class="article-container">
-                    <img src="./assets/project-2.png" 
-                    alt="ChatAdvisor Project" 
-                    class="project-img"/>
-                </div>
-                <h2 class="experience-sub-title project-title">ChatAdvisor - AI Student Support Chatbot</h2>
-                
-                <h3 class="project-sub-section">Problem:</h3>
-                <p class="project-description">
-                    University students, especially those with learning difficulties, often face challenges in navigating extensive support resources and accessing timely, understandable advice. 
-                    This project aimed to enhance information accessibility and provide a streamlined student support solution.
-                </p><br/>
+                            <h3 class="project-sub-section">Achievements &amp; Impact</h3>
+                            <ul class="project-list">
+                                <!--<li>AI image classification model achieved ~46.27% accuracy on the fine-tuned InceptionV3 benchmark (validation set).</li>-->
+                                <li>User research confirmed <strong>significant student interest</strong> (<span id="research-metric">&gt;70%</span>) in the app's core features, highlighting potential for behaviour change toward sustainable cooking.</li>
+                            </ul>
+                        </div>
+                    </details>
 
-                <h3 class="project-sub-section">Solution:</h3>
-                <p class="project-description"> 
-                    In an Agile Scrum team of seven, 
-                    we developed ChatAdvisor, an <strong>AI-powered chatbot</strong> leveraging <strong>Natural Language Processing (NLP) techniques</strong>. 
-                    This <strong>conversational AI solution</strong> was designed for enhanced student support, 
-                    providing quick access to university resources through summarised, easy-to-read information and personalised recommendations tailored to specific student queries.
-                </p><br/>
+                    <!-- Project 2 -->
+                    <details class="project-item">
+                        <summary class="project-summary">
+                            <img src="./assets/project-2.png" alt="ChatAdvisor thumbnail" class="project-thumb"/>
+                            <div class="project-meta">
+                                <h2 class="experience-sub-title project-title">ChatAdvisor</h2>
+                                <span class="project-slogan">AI Student Support Chatbot</span>
+                            </div>
+                            <div class="project-toggle project-toggle-icon" aria-hidden="true">
+                                <span class="project-toggle-label">Details</span>
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+                        </summary>
+                        <div class="project-content">
+                            <h3 class="project-sub-section">Problem</h3>
+                            <p class="project-description">University students, especially those with learning difficulties, often face challenges in navigating extensive support resources and accessing timely, understandable advice. Large, unstructured support repositories make it hard to find concise, relevant guidance.</p>
 
-                <h3 class="project-sub-section">My Contributions:</h3>
-                <ul class="feature-list">
-                    <li>🔍 Integrating <strong>Apache Lucene</strong> to enable efficient <strong>information retrieval</strong>.</li>
-                    <li>✨ Leveraged <strong>Microsoft Azure AI Text Analytics</strong> for effective <strong>text summarisation</strong>.</li>
-                    <li>🤖 Configured <strong>OpenAI's GPT-3.5 Turbo</strong> for empathetic, context-aware <strong>AI responses</strong>.</li>
-                    <li>💻 Led <strong>User Interface (UI) development</strong> with <strong>Java Swing</strong> for an intuitive UX.</li>
-                    <li>ℹ️ Developed FAQ page to enhance <strong>usability</strong> and support access.</li>
-                </ul><br/>
+                            <h3 class="project-sub-section">Solution</h3>
+                            <p class="project-description">In an Agile Scrum team of seven, we developed ChatAdvisor, an <strong>AI-powered chatbot</strong> that leverages <strong>Natural Language Processing (NLP)</strong> and retrieval techniques to provide quick, summarised answers and personalised recommendations. The system combines an indexed knowledge base with AI summarisation to return concise, context-aware responses tailored to student queries.</p>
 
-                <h3 class="project-sub-section">Core Technologies:</h3>
-                <ul class="project-list">
-                    <li><strong>AI &amp; NLP Tools:</strong> Apache Lucene, Microsoft Azure AI Text Analytics, OpenAI GPT-3.5 Turbo</li>
-                    <li><strong>Backend Software Development:</strong> Java</li>
-                    <li><strong>Frontend UI Development:</strong> Java Swing</li>
-                    <li><strong>Cloud &amp; API Integration:</strong> Microsoft Azure AI and OpenAI</li>
-                </ul><br/>
+                            <h3 class="project-sub-section">My Contributions</h3>
+                            <ul class="feature-list">
+                                <li>🔍 Integrated <strong>Apache Lucene</strong> to enable efficient information retrieval across institutional documents and FAQ pages.</li>
+                                <li>✨ Leveraged <strong>Microsoft Azure AI Text Analytics</strong> for summarisation and entity extraction to produce concise, readable answers.</li>
+                                <li>🤖 Configured and tuned <strong>OpenAI GPT-3.5 Turbo</strong> for empathetic, context-aware dialogue and fallback handling.</li>
+                                <li>💻 Led frontend UI development with <strong>Java Swing</strong> for a responsive, accessible desktop client used in pilot testing.</li>
+                                <li>ℹ️ Created a searchable FAQ page and UX flows to improve discoverability and reduce duplicate queries.</li>
+                            </ul>
 
-                <h3 class="project-sub-section">Achievements &amp; Impact:</h3>
-                <ul class="project-list">
-                    <li>Delivered an <strong>AI chatbot</strong> for quick, summarised access to university support, helping to <span id="impact-result">reduce student stress</span></li>
-                    <li>Provided a personalised user experience with <span id="impact-result">tailored recommendations for individual student queries</span></li>
-                </ul>
+                            <h3 class="project-sub-section">Core Technologies</h3>
+                            <ul class="project-list">
+                                <li>Apache Lucene (search & indexing)</li>
+                                <li>Microsoft Azure AI (Text Analytics)</li>
+                                <li>OpenAI GPT-3.5 Turbo (conversational responses)</li>
+                                <li>Java (backend & UI with Swing)</li>
+                            </ul>
+
+                            <h3 class="project-sub-section">Achievements &amp; Impact</h3>
+                            <ul class="project-list">
+                                <li>Delivered an AI chatbot prototype that improved information retrieval speed in user testing and reduced time-to-answer for common support queries.</li>
+                                <li>Personalised responses and summarisation led to higher perceived usefulness and satisfaction in pilot users, improving accessibility for students with learning difficulties.</li>
+                            </ul>
+                        </div>
+                    </details>
+
                 </div>
             </div>
         </div>

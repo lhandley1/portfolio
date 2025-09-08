@@ -297,6 +297,27 @@ section {
     text-align: center;
 }
 
+/* When used as the project-list wrapper, avoid extra padding/margins that shift content left */
+.details-containers.color-container.project-list {
+    /* center the project board to match #contact and Interests spacing */
+    margin: 2rem auto 0 auto; /* center horizontally */
+    padding: 2.5rem 2rem;
+    background: white;
+    border-radius: 2rem;
+    width: 80%;
+    max-width: 1100px; /* match contact/projects max-width for consistent gutters */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* ensure child project-list and items stretch full width */
+    border: 2px solid #bdbdbd;
+    box-sizing: border-box;
+}
+
+.about-containers {
+    justify-content: center; /* ensure children are centered */
+}
+
 .text-container {
     display: flex;
     margin-bottom: 8rem;
@@ -474,6 +495,7 @@ article .icon {
 .project-img {
     border-radius: 1.5rem;
     width: 80%;
+    max-width: 1100px; /* keep the project board same max width as the projects container for consistency */
     height: 80%;
 }
 
@@ -521,6 +543,182 @@ article .icon {
     border-color: rgb(163, 163, 163);
 }
 
+/* Collapsible project items (desktop) */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0; /* remove auto-centering so it fills the outer board */
+    max-width: none; /* outer container controls max width */
+    padding: 0; /* remove inner padding so project cards can span edge-to-edge inside the board */
+    box-sizing: border-box;
+}
+
+.details-containers.color-container.project-list .project-list {
+    width: 100%; /* span the full width of the outer board */
+    max-width: none; /* let outer container control max width */
+}
+
+.project-item {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 0.75rem 0.9rem; /* slightly reduced padding to let summaries feel edge-to-edge */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%; /* ensure each card fills the project's board width */
+}
+
+.project-summary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.5rem 0.5rem;
+    min-height: 220px; /* ensure summaries are consistent height across cards */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* make sure the toggle sits to the far right */
+.project-summary .project-toggle {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-summary .project-toggle {
+    align-self: center; /* ensure vertical centering relative to image */
+}
+
+.project-thumb {
+    width: 200px;
+    height: 200px; /* square */
+    aspect-ratio: 1 / 1;
+    object-fit: cover; /* fill the square while preserving aspect */
+    background: none;
+    padding: 0; /* remove extra padding so image fills the area */
+    border-radius: 0.6rem;
+    display: block;
+    flex-shrink: 0;
+    flex: 0 0 200px; /* keep the thumbnail fixed so meta area aligns consistently */
+}
+
+.project-meta {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: center; /* vertically center title + slogan inside the summary */
+}
+
+.project-title {
+    font-size: 1.4rem;
+    margin: 0;
+    color: #111;
+}
+
+.project-slogan {
+    display: block;
+    font-weight: 600;
+    color: #166b30; /* dark green */
+    font-size: 1rem;
+}
+
+.project-toggle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1rem; /* larger rectangular pill */
+    border-radius: 0.6rem; /* not fully round */
+    background: linear-gradient(90deg, #179c52 0%, #1fa463 100%);
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: transform 220ms ease, box-shadow 180ms ease;
+    flex-shrink: 0;
+    box-shadow: 0 6px 14px rgba(23,156,82,0.12);
+}
+
+.project-item[open] .project-toggle-icon i {
+    transform: rotate(180deg);
+}
+
+.project-content {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    padding-left: 0.6rem; /* small left padding so list markers aren't flush to the card edge */
+    border-top: 1px dashed #e6e6e6;
+    font-size: 1.02rem;
+    line-height: 1.6;
+}
+
+/* Project content list markers are handled via .project-list inside .project-content
+    (keeps My Contributions .feature-list emoji-driven and marker-free). */
+
+/* When a details element is open, visually connect the summary and content into one card
+   by removing duplicate outer radii and ensuring the combined shape looks consistent */
+.project-item[open] .project-toggle-icon i {
+    transform: rotate(180deg);
+}
+
+.project-sub-section {
+    font-size: 1.18rem;
+    margin: 0.5rem 0 0.25rem 0; /* smaller gap above heading, subtle gap below */
+}
+
+.project-description {
+    font-size: 1.03rem;
+    color: #111;
+    margin: 0.2rem 0 0.6rem 0; /* small gap after paragraph */
+}
+
+.project-list {
+    margin: 0.18rem 0 0.6rem 1.1rem; /* slightly tighter vertical spacing for project lists */
+}
+
+.project-list li {
+    font-size: 1rem;
+    margin: 0.12rem 0; /* slightly tighter gap between bullets for readability */
+}
+
+/* Keep contribution lists compact and emoji-driven across desktop by default */
+.feature-list {
+    margin: 0.18rem 0 0.45rem 0; /* no left indent for contributor emojis */
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Keep contributor entries readable with breathing room between emoji rows */
+/* no per-li spacing on desktop; mobile rules handle readable spacing */
+
+/* On desktop, keep contribution lists compact (no bullets). Mobile rules will show bullets. */
+@media screen and (min-width: 901px) {
+    .project-item .feature-list {
+        margin-left: 0;
+        padding-left: 0;
+        list-style: none; /* keep simple bullets removed for compact desktop display */
+    }
+}
+
+/* Force visible bullets for lists inside project details (Core Technologies / Achievements)
+   everywhere — this override ensures these lists show markers while contribution lists
+   (other feature-list usages) remain compact. */
+.project-content .project-list {
+    list-style-type: disc !important;
+    list-style-position: outside !important;
+    padding-left: 1.4rem !important;
+    margin: 0.25rem 0 !important;
+}
+
+/* Small screens will stack differently via mediaqueries.css */
+
 /* FOOTER SECTION */
 footer {
     height: 26vh;
@@ -532,17 +730,18 @@ footer p {
 }
 
 #contact {
-    margin: 2rem auto 0 auto;
+    margin: 2rem auto 0 auto; /* center the contact panel */
     padding: 2.5rem 2rem;
     background: white;
     border-radius: 2rem;
-    max-width: 80%;      
+    max-width: 1100px; /* match projects max-width */
     width: 80%;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid #bdbdbd;
+    box-sizing: border-box;
 }
 
 #contact .title {
