@@ -387,68 +387,40 @@ article {
     gap: 0.5rem;
 }
 
-#html-icon {
-    color: orange;
-}
-
-#css-icon{
-    color: blue;
-}
-
-#js-icon {
-    color: rgb(255, 221, 51);
-}
-
 #ajax-icon {
     color: rgb(0, 153, 255);
-}
-
-#react-icon {
-    color: rgb(97, 218, 251);
-}
-
-#python-icon {
-    color: rgb(255, 212, 59);
-}
-
-#java-icon, #pytorch-icon {
-    color: rgb(255, 153, 0);
 }
 
 #r-icon {
     color: rgb(22, 92, 170);
 }
 
-#file-code-icon {
+#rest-api-icon {
     color: rgb(0, 153, 0);
 }
 
-#database-icon {
-    color: rgb(0, 153, 153);
-}
-
-#google-icon {
-    color: rgb(255, 0, 0);
-}
-
-#cloud-icon {
-    color: rgb(0, 127, 255);
-}
-
-#api-icon {
-    color: grey;
-}
-
-#github-icon {
-    color: black;
+#colab-icon {
+    color: rgb(232, 113, 10);
 }
 
 #pandas-icon {
     color: rgb(21, 4, 88)
 }
 
+#numpy-icon {
+    color: rgb(77, 119, 207);
+}
+
 #pillow-icon {
     color: rgb(74, 144, 226);
+}
+
+#cnn-icon {
+    color: rgb(236, 64, 122);
+}
+
+#knn-nb-icon {
+    color: rgb(40, 167, 69);
 }
 
 #cnn-icon {
