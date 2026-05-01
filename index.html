@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Luke Handley, an graduate software developer skilled in Python, Java, Django and full-stack web development. Explore my projects and experience.">
-    <title>Luke Handley - Software Developer Portfolio | Python, Java, Django</title>
+    <title>Luke Handley - AI Consultant/Developer Portfolio | Python, Java, Django</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -21,6 +24,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#interested">Interests</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#ai-stack">AI Stack</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul> 
@@ -38,6 +42,7 @@
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#interested" onclick="toggleMenu()">Interests</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#ai-stack" onclick="toggleMenu()">AI Stack</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -50,14 +55,17 @@
         <div class="section__text">
             <p class="section__text__p1">Hello! I'm</p>
             <h1 class="title">Luke Handley</h1>
-            <p class="section__text__p2">AI Consultant/Developer</p>
+            <p class="section__text__p2 terminal" aria-label="AI Consultant/Developer">
+                <span class="prompt" aria-hidden="true">&gt;</span><span class="typed" aria-hidden="true"></span><span class="caret" aria-hidden="true"></span>
+            </p>
             <div id="socials-container">
-                <a href="https://www.linkedin.com/in/luke-a-handley/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin fa-3x"></i>
+                <a href="https://www.linkedin.com/in/luke-a-handley/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/lhandley1" target="_blank" aria-label="Github">
-                    <i class="fab fa-github fa-3x"></i>
+                <a href="https://github.com/lhandley1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
                 </a>
+            </div>
         </div>
     </section>
     <section id="about">
@@ -89,260 +97,6 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Down Arrow" class="icon arrow" onclick="location.href='./#experience'"/>
-    </section>
-    <section id="interested">
-        <p class="section__text__p1">Interested In</p>
-        <h1 class="title">Tech & Creative Interests</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-containers">
-                    <div class="article-container" id="interested-articles">
-                        <article class="interest-card webapp">
-                            <i class="fas fa-globe"></i>
-                            <div>
-                                <h3>Web Application<br>Development</h3>
-                            </div>
-                        </article>
-                        <article class="interest-card genai">
-                            <i class="fas fa-magic"></i>
-                            <div>
-                                <h3>Generative AI</h3>
-                            </div>
-                        </article>
-                        <article class="interest-card llms">
-                            <i class="fas fa-brain"></i>
-                            <div>
-                                <h3>LLMs</h3>
-                            </div>
-                        </article>
-                        <article class="interest-card agentic">
-                            <i class="fas fa-network-wired"></i>
-                            <div>
-                                <h3>Agentic AI</h3>
-                            </div>
-                        </article>
-                        <article class="interest-card photo">
-                            <i class="fas fa-camera-retro"></i>
-                            <div>
-                                <h3>Photography</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <!-- HTML -->
-                        <article>
-                            <i class="devicon-html5-plain colored" style="font-size:2.2rem; color:#e44d26;"></i>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <!-- CSS -->
-                        <article>
-                            <i class="devicon-css3-plain colored" style="font-size:2.2rem; color:#1572b6;"></i>
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <!-- JavaScript -->
-                        <article>
-                            <i class="devicon-javascript-plain colored" style="font-size:2.2rem; color:#f7df1e;"></i>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <!-- AJAX: Font Awesome sync icon, green, NOT animated -->
-                        <article>
-                            <i class="fas fa-sync-alt" style="font-size:2.2rem; color: blue"></i>
-                            <div>
-                                <h3>AJAX</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <!-- React.js -->
-                        <article>
-                            <i class="devicon-react-original colored" style="font-size:2.2rem; color:#61dafb;"></i>
-                            <div>
-                                <h3>React.js</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- Flutter (replacing React Native) -->
-                        <article>
-                            <i class="devicon-react-original colored" style="font-size:2.2rem; color:#61dafb;"></i>
-                            <div>
-                                <h3>React Native</h3>
-                                <p>Learning</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <!-- Python -->
-                        <article>
-                            <i class="devicon-python-plain colored" style="font-size:2.2rem; color: #ffd343"></i>
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <!-- Java -->
-                        <article>
-                            <i class="devicon-java-plain colored" style="font-size:2.2rem; color:#e76f00;"></i>
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <!-- C/C++ -->
-                        <article>
-                            <i class="devicon-c-plain colored" style="font-size:2.2rem; color:#00599c;"></i>
-                            <div>
-                                <h3>C/C++</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <!-- SQL -->
-                        <article>
-                            <i class="devicon-mysql-plain colored" style="font-size:2.2rem; color:#00758f;"></i>
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <!-- GCP -->
-                        <article>
-                            <i class="devicon-googlecloud-plain colored" style="font-size:2.2rem; color:#4285f4;"></i>
-                            <div>
-                                <h3>Google Cloud Platform</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- Microsoft Azure -->
-                        <article>
-                            <i class="devicon-azure-plain colored" style="font-size:2.2rem; color:#0089d6;"></i>
-                            <div>
-                                <h3>Microsoft Azure</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- REST API: Font Awesome server icon, green -->
-                        <article>
-                            <i class="fas fa-server" style="font-size:2.2rem; color:#179c52;"></i>
-                            <div>
-                                <h3>REST APIs</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- Git/Github -->
-                        <article>
-                            <i class="devicon-github-original colored" style="font-size:2.2rem; color:#333;"></i>
-                            <div>
-                                <h3>Git/Github</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">AI/ML Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <span style="font-size:3rem; font-weight:900; color:#D97757; line-height:1; width:2.2rem; height:2.2rem; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;" aria-hidden="true">✳</span>
-                            <div>
-                                <h3>Claude Code</h3>
-                                <p>Learning</p>
-                            </div>
-                        </article>
-                        <!-- R -->
-                        <article>
-                            <i id="r-icon" class="fab fa-r-project fa-2x"></i>
-                            <div>
-                                <h3>R</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <!-- Google Colab: Font Awesome infinity icon, yellow/orange -->
-                        <article>
-                            <i class="fas fa-infinity" style="font-size:2.2rem; color:#f9ab00;"></i>
-                            <div>
-                                <h3>Google Colab</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <!-- PyTorch -->
-                        <article>
-                            <i class="devicon-pytorch-original colored" style="font-size:2.2rem; color:#ee4c2c;"></i>
-                            <div>
-                                <h3>PyTorch</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- Pandas -->
-                        <article>
-                            <i id="pandas-icon" class="fas fa-chart-bar" style="font-size:2.2rem; color:#130754;"></i>
-                            <div>
-                                <h3>Pandas</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- Matplotlib -->
-                        <article>
-                            <i class="devicon-matplotlib-plain colored" style="font-size:2.2rem; color:#11557c;"></i>
-                            <div>
-                                <h3>Matplotlib</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="fas fa-cube" style="font-size:2.2rem; color:#4d77cf;"></i>
-                            <div>
-                                <h3>NumPy</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="fas fa-image" style="font-size:2.2rem; color:#2196f3;"></i>
-                            <div>
-                                <h3>Pillow</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="fas fa-brain" style="font-size:2.2rem; color:#FFC0CB;"></i>
-                            <div>
-                                <h3>CNN</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="fas fa-project-diagram" style="font-size:2.2rem; color:#20b2aa;"></i>
-                            <div>
-                                <h3>KNN and Naive Bayes</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Down Arrow" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
@@ -459,6 +213,200 @@
             </div>
         </div>
     </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <i class="devicon-html5-plain tech-html" aria-hidden="true"></i>
+                            <h3>HTML</h3>
+                            <div class="proficiency" data-level="4" aria-label="Experienced"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-css3-plain tech-css" aria-hidden="true"></i>
+                            <h3>CSS</h3>
+                            <div class="proficiency" data-level="4" aria-label="Experienced"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-javascript-plain tech-js" aria-hidden="true"></i>
+                            <h3>JavaScript</h3>
+                            <div class="proficiency" data-level="3" aria-label="Intermediate"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="fas fa-sync-alt tech-ajax" aria-hidden="true"></i>
+                            <h3>AJAX</h3>
+                            <div class="proficiency" data-level="3" aria-label="Intermediate"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-react-original tech-react" aria-hidden="true"></i>
+                            <h3>React.js</h3>
+                            <div class="proficiency" data-level="2" aria-label="Basic"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-react-original tech-react" aria-hidden="true"></i>
+                            <h3>React Native</h3>
+                            <div class="proficiency" data-level="1" aria-label="Learning"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <i class="devicon-python-plain tech-python" aria-hidden="true"></i>
+                            <h3>Python</h3>
+                            <div class="proficiency" data-level="4" aria-label="Experienced"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-java-plain tech-java" aria-hidden="true"></i>
+                            <h3>Java</h3>
+                            <div class="proficiency" data-level="4" aria-label="Experienced"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-c-plain tech-c" aria-hidden="true"></i>
+                            <h3>C/C++</h3>
+                            <div class="proficiency" data-level="3" aria-label="Intermediate"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-mysql-plain tech-mysql" aria-hidden="true"></i>
+                            <h3>SQL</h3>
+                            <div class="proficiency" data-level="3" aria-label="Intermediate"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-googlecloud-plain tech-gcp" aria-hidden="true"></i>
+                            <h3>Google Cloud</h3>
+                            <div class="proficiency" data-level="2" aria-label="Basic"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-azure-plain tech-azure" aria-hidden="true"></i>
+                            <h3>Azure</h3>
+                            <div class="proficiency" data-level="2" aria-label="Basic"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="fas fa-server tech-rest" aria-hidden="true"></i>
+                            <h3>REST APIs</h3>
+                            <div class="proficiency" data-level="2" aria-label="Basic"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-github-original tech-github" aria-hidden="true"></i>
+                            <h3>Git/Github</h3>
+                            <div class="proficiency" data-level="3" aria-label="Intermediate"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">AI/ML Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <i class="fab fa-r-project tech-r" aria-hidden="true"></i>
+                            <h3>R</h3>
+                            <div class="proficiency" data-level="3" aria-label="Intermediate"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="fas fa-infinity tech-colab" aria-hidden="true"></i>
+                            <h3>Google Colab</h3>
+                            <div class="proficiency" data-level="3" aria-label="Intermediate"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-pytorch-original tech-pytorch" aria-hidden="true"></i>
+                            <h3>PyTorch</h3>
+                            <div class="proficiency" data-level="2" aria-label="Basic"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="fas fa-chart-bar tech-pandas" aria-hidden="true"></i>
+                            <h3>Pandas</h3>
+                            <div class="proficiency" data-level="2" aria-label="Basic"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="devicon-matplotlib-plain tech-matplotlib" aria-hidden="true"></i>
+                            <h3>Matplotlib</h3>
+                            <div class="proficiency" data-level="2" aria-label="Basic"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="fas fa-cube tech-numpy" aria-hidden="true"></i>
+                            <h3>NumPy</h3>
+                            <div class="proficiency" data-level="2" aria-label="Basic"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="fas fa-image tech-pillow" aria-hidden="true"></i>
+                            <h3>Pillow</h3>
+                            <div class="proficiency" data-level="2" aria-label="Basic"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="fas fa-brain tech-cnn" aria-hidden="true"></i>
+                            <h3>CNN</h3>
+                            <div class="proficiency" data-level="3" aria-label="Intermediate"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                        <article>
+                            <i class="fas fa-project-diagram tech-knn" aria-hidden="true"></i>
+                            <h3>KNN &amp; Naive Bayes</h3>
+                            <div class="proficiency" data-level="2" aria-label="Basic"><span></span><span></span><span></span><span></span></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ai-stack">
+        <p class="section__text__p1">Tools I Use</p>
+        <h1 class="title">My AI Stack</h1>
+        <div class="ai-stack-grid">
+            <div class="ai-stack-card">
+                <h2 class="experience-sub-title">Coding Agents</h2>
+                <div class="ai-stack-tools" aria-label="Coding Agents">
+                    <article class="ai-stack-tool">
+                        <span class="tech-icon tech-claude" aria-hidden="true">✳</span>
+                        <h3>Claude Code</h3>
+                    </article>
+                    <article class="ai-stack-tool">
+                        <i class="fas fa-terminal tech-codex" aria-hidden="true"></i>
+                        <h3>Codex</h3>
+                    </article>
+                    <article class="ai-stack-tool">
+                        <i class="devicon-vscode-plain tech-vscode" aria-hidden="true"></i>
+                        <h3>VS Code AI Tools</h3>
+                    </article>
+                </div>
+            </div>
+            <div class="ai-stack-card">
+                <h2 class="experience-sub-title">LLMs</h2>
+                <div class="ai-stack-tools" aria-label="Model APIs">
+                    <article class="ai-stack-tool ai-stack-tool--text">
+                        <h3>Claude</h3>
+                    </article>
+                    <article class="ai-stack-tool ai-stack-tool--text">
+                        <h3>ChatGPT</h3>
+                    </article>
+                    <article class="ai-stack-tool ai-stack-tool--text">
+                        <h3>Perplexity</h3>
+                    </article>
+                    <article class="ai-stack-tool ai-stack-tool--text">
+                        <h3>Gemini</h3>
+                    </article>
+                </div>
+            </div>
+            <div class="ai-stack-card">
+                <h2 class="experience-sub-title">Local AI</h2>
+                <div class="ai-stack-tools" aria-label="Local AI">
+                    <article class="ai-stack-tool ai-stack-tool--text">
+                        <h3>Ollama</h3>
+                    </article>
+                    <article class="ai-stack-tool">
+                        <h3>Gemma</h3>
+                        <p>Google DeepMind</p>
+                    </article>
+                    <article class="ai-stack-tool">
+                        <h3>Phi</h3>
+                        <p>Microsoft Research</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Contact Section -->
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
@@ -488,12 +436,21 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#interested">Interests</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#ai-stack">AI Stack</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <p> &#169; 2026 Luke Handley</p>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/luke-a-handley/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/lhandley1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p>&#169; 2026 Luke Handley</p>
     </footer>
 </body>
 </html>

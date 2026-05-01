@@ -1,326 +1,162 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
+/* ── HAMBURGER BREAKPOINT ────────────────────────────────── */
+@media screen and (max-width: 1024px) {
+  #desktop-nav   { display: none; }
+  #hamburger-nav { display: flex; }
 }
 
-
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile, .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
-  .about-details-containers {
-    padding-top: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 1rem;
-  }
-  #about .title {
-    margin-bottom: 2.5rem;
-  }
-  .details-containers {
-    width: 90%;
-    margin: 0;
-  }
-  .about-containers {
-    margin-top: 0.5rem;
-    gap: 0.5rem;
-  }
+/* ── TABLET / STACK ─────────────────────────────────────── */
+@media screen and (max-width: 768px) {
   #profile {
-    height: 75vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
     flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+    min-height: calc(100vh - 4.5rem);
+    min-height: calc(100svh - 4.5rem);
+    padding-block: clamp(2rem, 6vh, 4rem);
+    gap: clamp(1.5rem, 5vh, 2.5rem);
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+
+  #profile .section__pic-container {
+    width: clamp(150px, 45vw, 240px);
+    height: clamp(150px, 45vw, 240px);
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+
+  #about .section-container {
+    grid-template-columns: 1fr;
   }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
-    width: 90%
-  }
-  .project-title {
-    font-size: 1.8rem;
-  }
-  .project-sub-section {
-    text-align: left;
-    font-size: 1.4rem;
-  }
-  #slogan {
-    font-size: 1.2rem;
-  }
-  #contact {
-    margin: 1rem auto 2rem auto;
-    padding: 1rem 0.5rem;
-    border-radius: 1rem;
-    max-width: 90%;
-    width: 90%;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-    border: 1.5px solid #bdbdbd;
-  }
-  #contact .title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  .contact-form {
-    gap: 1rem;
-  }
-  .contact-form-group input,
-  .contact-form-group textarea {
-    font-size: 1rem;
-    padding: 0.7rem 0.7rem;
-    border-radius: 0.7rem;
-  }
-  .contact-btn {
+
+  #about .section__pic-container {
+    aspect-ratio: 16/9;
+    min-height: unset;
     width: 100%;
-    padding: 0.8rem 0;
-    font-size: 1rem;
-    border-radius: 1.2rem;
-    margin-top: 0.7rem;
-    align-self: center;
   }
 
-  #about {
-    margin-bottom: 2.2rem;
-    padding-bottom: 0;
-  }
-  #about .section-container,
-  #about .about-details-container,
-  #about .about-containers {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  #about .text-container {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  #interested {
-    margin-top: 1.2rem;
-    margin-bottom: 1.5rem;
-    padding: 0.5rem;
-  }
-
-  #interested-articles {
-      flex-direction: column;
-      align-items: center;
-      gap: 0.7rem;
-      width: 100%;
-      margin: 0 auto;
-      padding: 1rem;
-      box-sizing: border-box;
-  }
-  .interest-card {
-      width: 90%;
-      max-width: 400px;
-      min-width: 0;
-      box-sizing: border-box;
-      margin: 0.3rem auto;
-      padding: 1.2rem 1rem;
-  }
-
-  #interested .title {
-    margin-bottom: 1rem;
-    padding-bottom: 0.3rem;
-  }
-
-  .details-containers.education,
-  .details-containers.awards {
-      width: 95%;
-      max-width: 420px;
-      min-width: 0;
-      margin: 0.2rem auto 0.5rem auto;
-      padding: 1rem 0.7rem;
-      border-radius: 1.5rem;
-      box-sizing: border-box;
-  }
-  .details-containers.education .icon,
-  .details-containers.awards .icon {
-      width: 2.2rem;
-      height: 2.2rem;
-      margin-bottom: 0.7rem;
-  }
-  .details-containers.education h3,
-  .details-containers.awards h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-  }
-  .details-containers.education p,
-  .details-containers.awards p {
-      font-size: 0.9rem;
-      margin: 0.2rem 0;
-      line-height: 1.5;
-  }
-  .section-container {
-    gap: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .project-summary {
+  .about-containers {
     flex-direction: column;
+  }
+
+  .details-containers {
+    width: 100%;
+  }
+
+  #experience .about-containers {
     align-items: stretch;
   }
 
-  /* ensure projects container padding is symmetric on small screens */
-  .project-list {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+  #experience .details-containers {
+    align-self: stretch;
   }
 
-  .details-containers.color-container.project-list {
-    padding: 0;
-    margin: 0 auto;
-    border: none;
-    background: transparent;
+  .ai-stack-grid {
+    grid-template-columns: 1fr;
   }
 
-  .details-containers.color-container.project-list {
-    padding: 1rem 0.8rem;
-    background: white;
-    border-radius: 1rem;
-    border: 1.5px solid #bdbdbd;
-    margin-left: 5%;
-    width: 90%;
+  .project-summary {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: unset;
+    padding: var(--space-4);
   }
 
   .project-thumb {
     width: 100%;
-    aspect-ratio: 1 / 1; /* make square based on available width */
-    height: auto; /* let aspect-ratio determine height */
-    object-fit: cover; /* fill the square while preserving important content */
-    border-radius: 0.8rem;
-    display: block;
+    height: auto;
+    flex: unset;
+    border-radius: var(--radius-md);
   }
 
-  .project-toggle-icon {
-    width: auto;
-    align-self: center;
-    margin: 0.6rem auto 0.2rem auto;
-    padding: 0.55rem 1rem;
+  .project-summary .project-toggle {
+    margin-left: 0;
+    justify-content: center;
   }
 
-  .project-title {
-    font-size: 1.05rem;
+  .project-toggle-icon { align-self: center; }
+}
+
+/* ── MOBILE ─────────────────────────────────────────────── */
+@media screen and (max-width: 480px) {
+  section {
+    padding-block: clamp(2rem, 5vw, 3.5rem);
+    width: 100%;
+    max-width: var(--container);
+    padding-inline: 1rem;
   }
 
-  .project-content {
-    padding-top: 0.5rem;
+  .details-containers {
+    padding: 1.25rem;
   }
 
-  /* Reduce vertical gaps for project content on mobile */
-  .project-sub-section {
-    font-size: 1.12rem;
-    margin: 0.35rem 0 0.12rem 0; /* slightly smaller top and bottom gap */
+  #profile {
+    text-align: center;
+    justify-content: center;
+    padding-block: clamp(1.5rem, 5vh, 3rem);
+    gap: clamp(1.25rem, 4vh, 2rem);
   }
 
-  .project-description {
-    margin: 0.12rem 0 0.45rem 0; /* tighter paragraph spacing */
+  #profile .section__pic-container {
+    width: clamp(150px, 42vw, 210px);
+    height: clamp(150px, 42vw, 210px);
   }
 
-  /* Improve mobile readability inside project details: add small breaks between sentences,
-     ensure long words wrap, and slightly increase line-height for comfortable reading. */
-  .project-content {
-    font-size: 0.50rem; /* smaller, as requested */
-    line-height: 1.45; /* slightly tighter line-height to match smaller size */
-    /* Prefer breaking at normal word boundaries; avoid mid-word splits and hyphenation */
-    overflow-wrap: break-word;
-    word-break: normal;
-    -webkit-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
+  #socials-container {
+    gap: var(--space-3);
+    margin-top: var(--space-3);
   }
 
-  .project-content p {
-    margin-bottom: 0.4rem; /* small break after paragraphs */
+  #socials-container a {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.75rem;
   }
 
-  /* Give both feature (contributions) and project lists a small break between items on mobile */
-  .project-content .project-list li,
-  .project-content .feature-list li {
-    margin: 0.12rem 0; /* small vertical spacing between list items */
-    line-height: 1.45; /* makes sentences inside an li easier to read */
+  .terminal {
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  /* Remove excessive left indentation for lists on mobile; keep a small left padding for readability */
-  .project-list, .feature-list {
-    margin: 0.18rem 0 0.45rem 0;
-    padding-left: 0; /* remove indent for contributions */
+  .article-container {
+    grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+    gap: var(--space-3);
   }
 
-  /* Make bullets visible and readable inside project details on small screens */
-  .project-content {
-    overflow: visible; /* ensure markers are not clipped */
+  #experience .article-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  /* Show compact bullets for Core Technologies / Achievements (these use .project-list) */
+
+  article {
+    min-width: 0;
+    padding-inline: var(--space-2);
+  }
+
+  #experience article {
+    min-height: 106px;
+  }
+
+  article h3,
+  .ai-stack-tool h3,
+  .project-slogan,
+  .project-description,
+  .feature-list,
   .project-content .project-list {
-    list-style-type: disc; /* standard bullets */
-    list-style-position: outside;
-    padding-left: 1.1rem; /* slightly tighter indent for mobile */
-    margin: 0.18rem 0 0.45rem 0;
-    color: #111;
+    overflow-wrap: anywhere;
   }
 
-  /* Reduce vertical spacing between bullet items for improved readability */
-  .project-content .project-list li {
-    margin: 0.06rem 0; /* reduced spacing between bullets for compact mobile view */
+  #contact {
+    width: calc(100% - 2rem);
+    padding: var(--space-8) 1.25rem;
+    border-radius: var(--radius-md);
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+
+  .section-container,
+  .project-summary {
+    width: 100%;
+  }
+
+  footer .nav-links-container .nav-links {
+    gap: var(--space-4);
+    font-size: 0.82rem;
   }
 }
